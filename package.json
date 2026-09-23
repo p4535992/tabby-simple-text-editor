@@ -1,0 +1,38 @@
+{
+  "name": "tabby-simple-text-editor",
+  "version": "0.1.0",
+  "description": "A lightweight Midnight Commander-style text editor for Tabby SSH sessions.",
+  "license": "MIT",
+  "keywords": [
+    "tabby-plugin",
+    "tabby",
+    "ssh",
+    "sftp",
+    "text-editor",
+    "mcedit"
+  ],
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json --watch",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=17",
+    "tabby-core": ">=1"
+  },
+  "devDependencies": {
+    "@angular/core": ">=17",
+    "@types/node": "^22.0.0",
+    "tabby-core": ">=1",
+    "typescript": "^5.7.0"
+  },
+  "tabby": {
+    "apiVersion": 1
+  }
+}
